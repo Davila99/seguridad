@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console // Access Granted</title>
+    <style>
+        /* Estilos generales para el ambiente hacker */
+        body {
+            background-color: #000;
+            color: #03A062; /* Verde Matrix */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Contenedor de la consola */
+        .terminal {
+            width: 80%;
+            max-width: 700px;
+            background-color: rgba(0, 5, 0, 0.9);
+            border: 1px solid #03A062;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(3, 160, 98, 0.5);
+            border-radius: 5px;
+        }
+
+        /* Cabecera de la ventana */
+        .terminal-header {
+            border-bottom: 1px dashed #03A062;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        /* Contenido de texto */
+        .terminal-body p {
+            margin: 5px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Animación de cursor parpadeante */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background-color: #03A062;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 49% { background-color: #03A062; }
+            50%, 100% { background-color: transparent; }
+        }
+
+        /* Texto resaltado */
+        .alert {
+            color: #ff3333;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff3333;
+        }
+
+        .success {
+            color: #00ffcc;
+            text-shadow: 0 0 5px #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal">
+        <div class="terminal-header">
+            > TERMINAL ROOT@ANONYMOUS:~# BYPASS_FIREWALL --INIT
+        </div>
+        <div class="terminal-body">
+            <p>[*] Connecting to secure server...</p>
+            <p>[*] Injection point found at port 8080.</p>
+            <p class="success">[SUCCESS] Firewall breached successfully.</p>
+            <p>[*] Downloading encrypted database...</p>
+            <p>    [||||||||||||||||||||||||||||||] 100%</p>
+            <p class="alert">> ACCESS GRANTED_</p>
+            <p>> Ready for input...<span class="cursor">&nbsp;</span></p>
+        </div>
+    </div>
+
+</body>
+</html>
